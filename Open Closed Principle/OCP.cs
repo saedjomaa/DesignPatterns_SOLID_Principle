@@ -9,6 +9,7 @@ namespace Open_Closed_Principle
     /*
     * Open Closed Principle = open for extension but closed for modification
     * Open Closed Principle is the ISpecification & IFilter Interfaces for filtering as a strong example.
+    * You typically use inheritance and polymorphism, allowing for new behaviors to be added via subclassing or interfaces rather than changing the base class itself
     * Without it as the ProductFilter example will ... state space explosion (too much code will added) if we want to make 3 criteria then we need 7 methods
    
     */
@@ -60,7 +61,7 @@ namespace Open_Closed_Principle
             Size = size;
         }
     }
-    #region Old way need to much code
+    #region Old way need to much code and you will chanage the base class if you need extra methods
     public class ProductOldFilter
     {
         // let's suppose we don't want ad-hoc queries on products
