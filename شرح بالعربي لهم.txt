@@ -1,0 +1,70 @@
+Single Responsibility Principle  -->  Single Reason to Change
+ед« б« нжћѕ «д —Ён” 
+ЁёЎ яб«”н“
+«бг»ѕ√: нћ» «д няжд ед«я ”»» бб Џѕнб Џбм «бяб«”
+«–« я«д «б Џѕнб ЁёЎ нќ’ Ёдя‘нд нћ»  Џѕнбе« ЁдЏѕбе«
+бяд «–« я«д «б Џѕнб ббяб«” «беѕЁ где «÷«Ё… Ёдя‘д ћѕнѕе Ёнћ» Џдѕе« «бдў— «–« я«д   ќ’ дЁ” «бяб«” «г нћ» Џгб яб«” ћѕнѕ бняжд «б«÷«Ёе »ѕ«ќбе
+
+
+#################################################################################
+
+
+Liskov Substitution Principle  -->  Substitue = can use
+ед« «н÷« б« нжћѕ «д —Ён”
+ЁёЎ яб«”н“
+«бг»ѕ√: нћ» «д няжд ед«я яб«” ж ”» яб«” жняжд »ндег «ден—н «д”
+Class (SubClass)  --->   inhirits a Class (Base)
+жяг« дЏ—Ё нћ» »Ќ«б… «б«де—н «д” «д д” ќѕг «бЁн—‘нж«б
+Virtual Proprties & Virtual Methods
+public virtual void Fly()  ---> in the Base Class
+»–бя н’»Ќ «бяб«” «б√» «бЁ«дя‘нд »ѕ«ќбе Ћ«» е жб« нгяд  џнн—е« ж«–« «—«ѕ «б”» яб«” «б Џѕнб Џбне« ЁЏдѕе« нЏгб «жЁ——«нѕ Ё«дя‘нд
+public override void Fly()  ---> in the sub-Class
+
+
+#################################################################################
+
+
+Open Closed Principle  -->  open for extension but closed for modification
+inheritance and polymorphism  -->  make prototype for the classes that will implement the Interface
+«бг»ѕ√: «б ќЁнЁ гд я «»… «бяжѕ ббяб«” «б—∆н”н ябг« «Ќ ћд«  Џѕнб б–бя е–е «бЎ—нёе гЁ жЌе бб ж”Џ жбяд гџбёе бб Џѕнб б«дд« б« дЏгб я «»… яжѕ »«б«д —Ён”
+ед« нжћѕ «д —Ён” жяб«” б√де «б«я” нд‘нд няжд ”еб »«б«д —Ён”
+б«Ќў «бЁ—ё «д «б»н” яб«”  яжд «бЁ«дя‘нд Ёне« яжѕ жбяд »Ќ«б… «б√ж»д ябж“ѕ Ёняжд «д —Ён” »ѕжд яжѕ бнёжг «бяб«” »Џгб «бяжѕ »г« нд«”»е
+гд «б«гЋб… «б‘ен—е Џбне 
+interface ISpecification<T>   &   interface IFilter<T>
+
+
+#################################################################################
+
+
+Interface Segregation Principle  -->  (Seperated Interfaces) Focuses on interface design and reducing unnecessary dependencies  -->  The classes that implement the Interface should not be forced to depend on interfaces they do not use 
+inheritance and polymorphism  -->  make prototype for the classes that will implement the Interface
+ед« нжћѕ «д —Ён” жяб«” б√де «б«я” нд‘нд няжд ”еб »«б«д —Ён”
+«бг»ѕ√: еж нќ бЁ Џд «б–н ё»бе »√дд« б« нћ» «д дёжг »Џгб «д —Ён” ж«Ќѕ Ёне яб ‘нЅ б√д «бяб«”н“ «б н ”жЁ  Џгб Џбм «б√г»бнгнд  бе нћ» «д  Џгб я «»… яжѕ нќ’е«
+ЁЏдѕ е–е «бЌ«бе ”дд ен »Ё«дя‘нд“ ЁёЎ г–яж—е бяд б« нжћѕ бе« яжѕ
+Ё«бЌб няжд »Џгб «я»— ёѕ— ггяд гд «б«д —Ён”н“ Џдѕ «бЌ«ће бнёжг яб яб«” »Џгб «г»бнгд  бб«д —Ён” «б–н неге ЁёЎ
+бж я«д ед«я «д —Ён” нћгЏ »нд «яЋ— гд «д —Ён” Ёггяд  Џ—нЁе жћЏбе нЏгб «г»бнгд  бгд нЌ «ћ
+«бЎ—нёе ед« ќЎ√ б«д «б«д —Ён” е–« «ћ»— яб «бг«‘нд“ «д  я » яжѕ ббЁ«дя‘нд“
+  public interface IMachine
+  {
+    void Print(Document d);
+    void Fax(Document d);
+    void Scan(Document d);
+  }
+«бЎ—нёе ед« ’Ќ б«д яб г‘нд  √ќ– г«  Ќ «ће
+  public interface IPrinter
+  {
+      void Print(Document d);
+  }
+  public interface IScanner
+  {
+      void Scan(Document d);
+  }
+  public interface IMultiFunctionDevice : IPrinter, IScanner //
+  {
+
+  }
+ 
+
+#################################################################################
+
+

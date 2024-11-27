@@ -6,10 +6,15 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Single Responsibility Principle", "Single Responsibility Principle\Single Responsibility Principle.csproj", "{87C7E263-BF79-4788-9C31-262913A5C2D7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SOLID", "SOLID", "{3323556D-D687-402C-9CCA-68F4CBFF7F84}"
+	ProjectSection(SolutionItems) = preProject
+		شرح بالعربي لهم.txt = شرح بالعربي لهم.txt
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Open Closed Principle", "Open Closed Principle\Open Closed Principle.csproj", "{5619A72D-32D0-4405-A2B4-315E55CE0148}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Liskov Substitution Principle", "Liskov Substitution Principle\Liskov Substitution Principle.csproj", "{6508768F-4860-4162-AB29-20596BF5BAFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface Segregation Principle", "Interface Segregation Principle\Interface Segregation Principle.csproj", "{1D2E89BD-EAD0-4F86-91F9-CC1129D17CF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +34,10 @@ Global
 		{6508768F-4860-4162-AB29-20596BF5BAFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6508768F-4860-4162-AB29-20596BF5BAFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6508768F-4860-4162-AB29-20596BF5BAFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D2E89BD-EAD0-4F86-91F9-CC1129D17CF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D2E89BD-EAD0-4F86-91F9-CC1129D17CF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D2E89BD-EAD0-4F86-91F9-CC1129D17CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D2E89BD-EAD0-4F86-91F9-CC1129D17CF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,5 +46,6 @@ Global
 		{87C7E263-BF79-4788-9C31-262913A5C2D7} = {3323556D-D687-402C-9CCA-68F4CBFF7F84}
 		{5619A72D-32D0-4405-A2B4-315E55CE0148} = {3323556D-D687-402C-9CCA-68F4CBFF7F84}
 		{6508768F-4860-4162-AB29-20596BF5BAFA} = {3323556D-D687-402C-9CCA-68F4CBFF7F84}
+		{1D2E89BD-EAD0-4F86-91F9-CC1129D17CF4} = {3323556D-D687-402C-9CCA-68F4CBFF7F84}
 	EndGlobalSection
 EndGlobal
