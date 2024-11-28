@@ -67,11 +67,24 @@ inheritance and polymorphism  -->  make prototype for the classes that will impl
 
 #################################################################################
 
+Dependency Inversion Principle  -->  (Dependency Injection) Focuses on High-level modules should not depend on low-level modules. Both should depend on abstractions
+So we need abstractions (Interface or Abstract) Then a low-level Class that implement the Interface finall the High-level Class that Implement the same Interface of the low-level Class
+Depending on it's type the code will work
+
+ILogger logger = new FileLogger();
+OrderService orderService = new OrderService(logger);
+orderService.ProcessOrder();  // Logs to file
+
+// Changing the logger without modifying OrderService
+logger = new DatabaseLogger();
+orderService = new OrderService(logger);
+orderService.ProcessOrder();  // Logs to database
+
+»е–« «бгЋ«б б√де «” ќѕг джЏнд гќ бЁнд гд «ббжџ Ёёгд« »Џгб е«н бнЁб яб«” бяб джЏ ж»Џѕе« «бяжд —жбн— н” ќѕг джЏ «ббжџ «б–н нд«”»е
+бяд жбяд жбяд »Ќ«б д« »«б»—гће дЌд б« няжд бѕнд« »√џб» «бЌ«б«  ”жм джЏ ж«Ќѕ «” янж «б «ж «ж—«яб б–бя б« дЌ «ћ бЏгб е«н бнЁб ё»б «бяжд —жбн— »б няжд «бяжд —жбн— еж «бе«н бнЁб
 
 
-
-
-
+#################################################################################
 
 
 
