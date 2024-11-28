@@ -14,6 +14,12 @@ namespace Dependency_Inversion_Principle
      * Low-level module: A module that implements specific tasks, such as data storage, network communication, etc.
      * High-level module: A module that provides core functionality or business logic.  --> It's the Controller in MVC
      * Imagine the DatabaseContext. we shouldn't expose the store to Controller, So; we need a low level class before thr High level class to deal with every thing then the high level module will only call it without adding any functionality to it
+     
+     *Benefits of DIP
+        Loose Coupling: High-level and low-level modules are independent of each other.
+        Flexibility: You can easily replace or add new implementations (like switching from file logging to database logging) without affecting the high-level logic.
+        Testability: You can easily mock or substitute the ILogger interface when writing unit tests for OrderService.
+     
      */
 
 
