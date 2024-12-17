@@ -26,6 +26,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton_DP", "Singleton_D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder_DP", "Builder_DP\Builder_DP.csproj", "{42935428-C412-40A9-8999-AD73541856A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryAndAbstractFactory_DP", "FactoryAndAbstractFactory_DP\FactoryAndAbstractFactory_DP.csproj", "{7FC155E0-947A-415B-BCA9-F534E6251449}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,6 +62,10 @@ Global
 		{42935428-C412-40A9-8999-AD73541856A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42935428-C412-40A9-8999-AD73541856A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42935428-C412-40A9-8999-AD73541856A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FC155E0-947A-415B-BCA9-F534E6251449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FC155E0-947A-415B-BCA9-F534E6251449}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FC155E0-947A-415B-BCA9-F534E6251449}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FC155E0-947A-415B-BCA9-F534E6251449}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,5 +79,6 @@ Global
 		{C2A3B4F3-8D8D-40B4-931C-A159CB3D8624} = {6C119697-233B-454F-A6C3-F141B41CBFB6}
 		{EDE422A2-2FD0-47E0-9951-C09523B37789} = {C2A3B4F3-8D8D-40B4-931C-A159CB3D8624}
 		{42935428-C412-40A9-8999-AD73541856A1} = {C2A3B4F3-8D8D-40B4-931C-A159CB3D8624}
+		{7FC155E0-947A-415B-BCA9-F534E6251449} = {C2A3B4F3-8D8D-40B4-931C-A159CB3D8624}
 	EndGlobalSection
 EndGlobal
