@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace Builder_DP
 {
     /*
-      * The Builder Design Pattern is a creational pattern that provides a way to construct a complex object step by step. 
-      * This pattern allows you to create different representations of an object using the same construction process. 
+      * The Builder Design Pattern is: a creational pattern that provides a way to construct a complex object step by step. 
+      * Purpose: This pattern allows you to create different representations of an object using the same construction process. 
       * It's especially useful when you need to create objects that require multiple steps, or when you want to avoid creating objects with constructors that take too many parameters (known as the telescoping constructor anti-pattern).
-      * 
+      
       * Components:
           * Product: The complex object that is being constructed.
           * Builder: Abstract class or interface that defines the methods for building parts of the product.
