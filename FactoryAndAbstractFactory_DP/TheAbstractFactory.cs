@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 namespace FactoryAndAbstractFactory_DP
 {
     /*
-    * The Abstract Factory design pattern is a creational pattern that allows you to create families of related or dependent objects without specifying their concrete classes. 
-    * It provides an interface for creating families of related or dependent objects. 
-    * This pattern is particularly useful when the system needs to be independent of how its products are created, composed, and represented.
+    * The Abstract Factory design pattern is: a creational pattern that allows you to create families of related or dependent objects without specifying their concrete classes. 
+    * Purpose: It provides an interface for creating families of related or dependent objects. 
+    * This pattern is particularly useful: when the system needs to be independent of how its products are created, composed, and represented.
+                                           That mean use it when the exact type of the families of objects isn’t known until runtime, or when the creation process is complex.
     
     * When to Use the Abstract Factory Pattern:
         When your system should be independent of how its products are created, composed, and represented.

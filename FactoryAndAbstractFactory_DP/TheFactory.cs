@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 namespace FactoryAndAbstractFactory_DP
 {
     /*
-     * The Factory Design Pattern is a creational design pattern used to abstract the process of object creation. 
-     * It provides an interface for creating objects but allows subclasses or classes to alter the type of objects that will be created. 
-     * This pattern is often used when there is a need to create objects of different types based on certain conditions, but without exposing the object creation logic to the client.
-     
+     * The Factory Design Pattern is: a creational design pattern used to abstract the process of object creation. 
+     * Purpose: It provides an interface for creating objects but allows subclasses or classes to alter the type of objects that will be created. 
+     * This pattern is often used: when there is a need to create objects of different types based on certain conditions, but without exposing the object creation logic to the client.
+                                   That mean use it when the exact type of the object isn’t known until runtime, or when the creation process is complex.
+
      * Benefits of the Factory Design Pattern:
         Factory Method: A method that is responsible for creating objects, but the actual class of the object is determined at runtime.
         Encapsulation: The object creation logic is hidden, and the client uses a common interface to obtain the required object without knowing how it is created.

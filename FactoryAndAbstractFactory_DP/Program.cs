@@ -3,7 +3,7 @@
 
 //Factory Implementation
 ShapeFactory circleFactory = new CircleFactory();
-IShape circle = circleFactory.CreateShape();
+IShape circle = circleFactory.CreateShape();// here we create one instance and we specify the concrete class
 circle.Draw();  // Output: Drawing a Circle
 
 // Using Square Factory
@@ -18,7 +18,7 @@ square.Draw();  // Output: Drawing a Square
 static IUIFactory GetFactory(string os)
 {
     if (os == "Windows")
-        return new WindowsUIFactory();
+        return new WindowsUIFactory();// here we create one instance that have many or families of instances can be created and we didn't specify the concrete class we only create the container that will create the required instance as needed
     else if (os == "Mac")
         return new MacUIFactory();
     else
