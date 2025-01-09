@@ -98,26 +98,31 @@ Benefits of DIP
 If you're looking to focus on the most important and widely used design patterns, I would recommend learning the following, as these are fundamental to modern software development, and mastering them will cover a wide range of scenarios. These patterns will allow you to write cleaner, more maintainable, and scalable code in almost any programming environment.
 
 1. Singleton (Creational)
-Purpose: Ensures a class has only one instance and provides a global access point to that instance.
-Use cases: Common in situations where a single instance is required, like managing a logging system, configuration settings, or database connection pools.
-2. Factory Method (Creational)
-Purpose: Defines an interface for creating an object, but lets subclasses alter the type of objects that will be created.
-Use cases: Use it when the exact type of the object isn’t known until runtime, or when the creation process is complex.
+    Purpose: Ensures a class has only one instance and provides a global access point to that instance.
+    Use cases: Common in situations where a single instance is required, like managing a logging system, configuration settings, or database connection pools.
+2. Builder  (Creational)
+    Puspose: construct a complex object step by step.
+3. Factory Method (Creational)
+    Purpose: Defines an interface for creating an object, but lets subclasses alter the type of objects that will be created.
+    Use cases: Use it when the exact type of the object isn’t known until runtime, or when the creation process is complex.
+
 3. Observer (Behavioral)
-Purpose: Allows a subject to notify its dependents (observers) automatically when its state changes, without needing to know who or what those dependents are.
-Use cases: Widely used in event-driven programming, like GUI frameworks or in applications like stock market feeds, or even in the publishing model (e.g., newsletters).
+    Purpose: Allows a subject to notify its dependents (observers) automatically when its state changes, without needing to know who or what those dependents are.
+    Use cases: Widely used in event-driven programming, like GUI frameworks or in applications like stock market feeds, or even in the publishing model (e.g., newsletters).
 4. Strategy (Behavioral)
-Purpose: Defines a family of algorithms, encapsulates each one, and makes them interchangeable. This pattern lets the algorithm vary independently from the clients that use it.
-Use cases: It’s commonly used in cases where an object should change its behavior based on specific conditions, like different sorting algorithms or payment methods.
-5. Decorator (Structural)
-Purpose: Attaches additional responsibilities to an object dynamically. It provides a flexible alternative to subclassing for extending functionality.
-Use cases: Common in UI design patterns where components need additional functionality (e.g., adding borders, colors, or features to graphical elements without modifying their core behavior).
-6. Facade (Structural)
-Purpose: Provides a simplified interface to a complex subsystem, hiding its complexities.
-Use cases: Use when you have a system with multiple modules, and you want to provide a clean, easy-to-use interface. For example, database libraries or libraries with many submodules.
-7. Command (Behavioral)
-Purpose: Encapsulates a request as an object, allowing for parameterization of clients with different requests, queuing of requests, and logging of requests.
-Use cases: Often used for creating undo/redo functionality, task scheduling, or event handling systems (like in GUI or control systems).
+    Purpose: Defines a family of algorithms, encapsulates each one, and makes them interchangeable. This pattern lets the algorithm vary independently from the clients that use it.
+    Use cases: It’s commonly used in cases where an object should change its behavior based on specific conditions, like different sorting algorithms or payment methods.
+
+5. Command (Behavioral)
+    Purpose: Encapsulates a request as an object, allowing for parameterization of clients with different requests, queuing of requests, and logging of requests.
+    Use cases: Often used for creating undo/redo functionality, task scheduling, or event handling systems (like in GUI or control systems).
+6. Decorator (Structural)
+    Purpose: Attaches additional responsibilities to an object dynamically. It provides a flexible alternative to subclassing for extending functionality.
+    Use cases: Common in UI design patterns where components need additional functionality (e.g., adding borders, colors, or features to graphical elements without modifying their core behavior).
+7. Facade (Structural)
+    Purpose: Provides a simplified interface to a complex subsystem, hiding its complexities.
+    Use cases: Use when you have a system with multiple modules, and you want to provide a clean, easy-to-use interface. For example, database libraries or libraries with many submodules.
+
 8. Model-View-Controller (MVC) (Architectural)
 Purpose: Separates the application into three main components—Model (data), View (UI), and Controller (business logic)—allowing independent development, testing, and maintenance.
 Use cases: Very popular in web frameworks like Angular, React (with a slight variation), and Ruby on Rails. It's also common in desktop apps like those using JavaFX or WPF.
